@@ -1,0 +1,68 @@
+.delete-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  color: var(--accent);
+  transition: 0.3s ease-out;
+}
+
+.delete-icon:hover {
+  color: #ee0000;
+}
+
+.close-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.1s linear;
+}
+
+.close-icon:hover {
+  color: #555;
+  scale: 1.05;
+}
+
+.cart-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: var(--light-navy);
+  transition: all 0.1s linear;
+}
+
+.cart-icon:hover {
+  color: var(--light-slate);
+  scale: 1.05;
+}
+
+.down-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.1s linear;
+}
+
+.down-icon:hover {
+  color: #555;
+  scale: 1.05;
+}
+
+.up-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.1s linear;
+}
+
+.up-icon:hover {
+  color: #555;
+  scale: 1.05;
+}
+
+.small-icon {
+  width: 20px;
+  height: max-content;
+}

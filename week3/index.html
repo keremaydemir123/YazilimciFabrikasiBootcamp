@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module" defer></script>
+  <title>Bir kelime bir işlem</title>
+</head>
+
+<body>
+
+  <template id="operation-game-numbers">
+    <div class="number"></div>
+    <div class="number"></div>
+    <div class="number"></div>
+    <div class="number"></div>
+    <div class="number"></div>
+    <div class="number"></div>
+    <div id="result" class="number result selected"></div>
+  </template>
+
+  <template id="operation-game-operators">
+    <div class="number">+</div>
+    <div class="number">-</div>
+    <div class="number">*</div>
+    <div class="number">/</div>
+  </template>
+
+  <template id="operation-game-answer">
+    <div class="operation-answer">
+    </div>
+  </template>
+
+  <template id="operation-game-buttons">
+    <div class="buttons-wrapper">
+      <button class="btn">HOME</button>
+      <button class="btn">RESTART</button>
+      <button id="check" class="btn disabled operation" disabled>CHECK</button>
+      <button class="btn operation">CLEAR</button>
+    </div>
+  </template>
+
+  <template id="word-game-letters">
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+    <div class="letter"></div>
+  </template>
+
+  <template id="word-game-word-input">
+    <input type="text" class="word-game-answer" />
+  </template>
+
+  <template id="word-game-buttons">
+    <div class="buttons-wrapper">
+      <button class="btn">HOME</button>
+      <button class="btn">RESTART</button>
+    </div>
+  </template>
+
+  <div id="game-select" class="container">
+    <div class="mod-select">
+      <button id="operation-game-button" class="btn">İşlem</button>
+      <h3>İşlem Oyunu Kuralları</h3>
+      <ul class="rules">
+        <li>Her sayıyı bir kere kullanabilirsin</li>
+        <li>Her işlemi istediğin kadar kullanabilirsin</li>
+        <li>Sayıların ve aritmetik olieratörlerin üzerine tıklayarak onları sıraya koymalısın </li>
+        <li>İşlem önceliğini unutma!</li>
+      </ul>
+    </div>
+    <div class="mod-select">
+      <button id="word-game-button" class="btn">Kelime</button>
+      <h3>Kelime Oyunu Kuralları</h3>
+      <ul class="rules">
+        <li>Her harfi bir kere kullanabilirsin</li>
+        <li>Bulduğun kelimeyi ilgili yere yazmalısın</li>
+        <li>Eğer yazdığın kelimede verilen harflerden biri yoksa uyarı alacaksın</li>
+        <li>Kelimenin gerçek bir kelime olduğundan emin ol!</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="game-board" class="container game-element"></div>
+  <div id="operators" class="container game-element"></div>
+  <div id="answer" class="container game-element"></div>
+  <div id="answer-buttons" class="container game-element"></div>
+  <div id="timer">
+    <p id="countdown">60</p>
+  </div>
+
+</body>
+
+</html>

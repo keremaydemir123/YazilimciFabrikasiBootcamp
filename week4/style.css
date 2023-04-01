@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(45deg, #ddf, #cce);
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+#container {
+  width: 100%;
+  padding: 0 0;
+  transition: all 0.3s ease-out;
+}
+
+#toolbar {
+  padding: 1rem 2rem;
+  background: #eeeeee30;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.number-input {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  border: solid #555 4px;
+  color: #eee;
+  border-radius: 0.6rem;
+  outline: none;
+  width: 80px;
+  cursor: pointer;
+}
+
+.number-input:focus {
+  border: solid #aaf 4px;
+}
+
+.btn {
+  padding: 0.6rem 0.3rem;
+  background-color: #333;
+  border: solid #555 4px;
+  color: #eee;
+  border-radius: 0.6rem;
+  transition: scale 0.3s ease;
+  outline: none;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover {
+  scale: 1.05;
+}
+
+.btn.selected {
+  border: solid #aaf 4px;
+}
+
+.filter {
+  margin-left: auto;
+  background: #333;
+  color: #aaf;
+  font-weight: bold;
+}
+
+#image-container {
+  min-height: 900px;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  transition: 0.3s ease-in all;
+}
+
+.wrapper {
+  background-color: #eee;
+}
+
+.image {
+  opacity: 0;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 400px) {
+  .image {
+    opacity: 0;
+  }
+}
+
+.splitter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 0.8rem 0;
+}

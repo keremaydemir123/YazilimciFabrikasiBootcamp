@@ -1,0 +1,43 @@
+.button {
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+  border: 1px solid var(--navy);
+  color: var(--navy);
+  cursor: pointer;
+  transition: 0.1s ease-in-out all;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 40px;
+}
+
+.button:hover {
+  background-color: var(--light-navy);
+  color: var(--white);
+}
+
+.button:hover svg {
+  fill: var(--white);
+}
+
+.button-details {
+  background-color: var(--accent);
+  color: var(--white);
+  border: 1px solid var(--accent);
+}
+
+.button-details:hover {
+  background-color: transparent;
+  color: var(--accent);
+}
+
+.button-reverse {
+  background-color: var(--light-navy);
+  color: var(--white);
+}
+
+.button-reverse:hover {
+  background-color: transparent;
+  color: var(--navy);
+}

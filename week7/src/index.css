@@ -1,0 +1,59 @@
+@import "./styles/home.css";
+@import "./styles/navbar.css";
+@import "./styles/button.css";
+@import "./styles/category.css";
+@import "./styles/counter.css";
+@import "./styles/productDetails.css";
+@import "./styles/card.css";
+@import "./styles/cart.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --green: #64ffda;
+  --accent: coral;
+  --navy: #112240;
+  --light-navy: #233554;
+  --light-slate: #a8b2d1;
+  --light-gray: #ccd6f6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--navy);
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--light-navy);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

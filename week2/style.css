@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #99c5f4 0%, #b57ed2 100%);
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.image {
+  box-shadow: 6px 10px 20px 0 rgba(0, 0, 0, 0.251);
+  object-fit: cover;
+}
+
+.pp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.hw_image {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 6px;
+}
+
+.jb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn {
+  box-shadow: 4px 6px 10px 0 rgba(0, 0, 0, 0.251) !important;
+}
+
+.image__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cta {
+  width: 150px;
+  height: 150px;
+  text-decoration: none;
+}
+
+.cta:hover {
+  fill: #7f458f;
+}
+
+.about-me {
+  height: max-content;
+}
+
+.nav-shadow {
+  box-shadow: 2px 1px 10px 0 rgb(15, 15, 15, 0.6) !important;
+}
+
+/* Bootstrap Variables */
+
+.text-primary {
+  color: #5d2f6a !important;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  box-shadow: 2px 4px 10px 0 rgb(15, 15, 15, 0.6) !important;
+}

@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: linear-gradient(45deg, #669, #77a);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.specific {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  background: #334;
+  color: #ddf;
+  min-width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 60px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 3px 8px rgba(20, 20, 20, 0.3);
+  padding: 1rem;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  height: max-content;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  color: #ddf;
+  background: #223;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 2px solid #333;
+  box-shadow: 2px 4px 4px rgba(20, 20, 20, 0.1);
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #dde;
+  color: #222;
+}
+
+select {
+  position: absolute;
+  top: 1rem;
+  color: #ddf;
+  background: #223;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 2px solid #333;
+  box-shadow: 2px 4px 4px rgba(20, 20, 20, 0.1);
+  transition: all ease 0.3s;
+  cursor: pointer;
+  margin: 0 4px;
+  outline: 0;
+  width: 200px;
+}
+
+input {
+  background: transparent;
+  padding: 0.5rem 0.8rem;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  border: none;
+  font-size: 50px;
+  max-width: 300px;
+  text-align: center;
+  color: #ddf;
+  height: 80px;
+  border-radius: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.degree-unit {
+  color: #ddf;
+  background: #223;
+  width: 100px;
+  height: 80px;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}

@@ -1,0 +1,66 @@
+.category {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 90%;
+  width: 400px;
+  padding: 1rem;
+}
+
+.category__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.category__header__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.category__header__toggle {
+  font-size: 1rem;
+  color: var(--light-navy);
+  cursor: pointer;
+}
+
+.category__header__toggle:hover {
+  color: var(--navy);
+}
+
+.category__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--light-navy);
+  padding: 0.3rem;
+}
+
+.category__body__name {
+  font-size: 1rem;
+  color: var(--light-navy);
+  cursor: pointer;
+}
+
+.category__body__checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--light-navy);
+  cursor: pointer;
+}
+
+.category__item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+}
+
+.category__item:hover {
+  background-color: var(--light-gray);
+}

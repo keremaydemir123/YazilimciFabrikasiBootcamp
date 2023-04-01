@@ -1,0 +1,23 @@
+.cart {
+  position: relative;
+  display: flex;
+  color: var(--navy);
+  font-size: 1.5rem;
+  width: max-content;
+}
+
+.cart__count {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: -4px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
